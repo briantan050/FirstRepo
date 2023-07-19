@@ -1,1 +1,17 @@
-beta gamma change
+mkdir FirstRepo
+cd FirstRepo
+pwd
+git init
+touch alpha.txt
+notepad alpha.txt
+git status
+git add .
+git status
+git commit -m "commit note"
+git remote add origin git@github.com:briantan050/FirstRepo.git
+git remote -v
+git push -u origin master
+
+git add .
+git commit -m "add folder"
+git push -u origin master
