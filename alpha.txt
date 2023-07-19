@@ -2,16 +2,21 @@ mkdir FirstRepo
 cd FirstRepo
 pwd
 git init
+
 touch alpha.txt
 notepad alpha.txt
+
 git status
-git add .
-git status
-git commit -m "commit note"
-git remote remove origin
-git remote add origin git@github.com:briantan050/FirstRepo.git
-git remote -v
-git push -u origin master
+git add .      // adds files to the commit
+git status     // check status
+git commit -m "commit note"      // creates the commit
+
+git remote remove origin         // in case we already added a remote origin
+git remote add origin git@github.com:briantan050/FirstRepo.git    // add new remote origin
+git remote -v                 // check the remote origin
+git branch -M main            // change to main branch
+git push -u origin main       // push to origin main
+git push -u origin master     // or push to origin master
 
 git add .
 git commit -m "add folder"
